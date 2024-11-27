@@ -1,26 +1,26 @@
 {
-  "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp",
-  "reactNativePath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native",
+  "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp",
+  "reactNativePath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native",
   "reactNativeVersion": "0.75",
   "dependencies": {
     "react-native-document-picker": {
-      "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-document-picker",
+      "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-document-picker",
       "name": "react-native-document-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-document-picker/react-native-document-picker.podspec",
+          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-document-picker/react-native-document-picker.podspec",
           "version": "9.3.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-document-picker/android",
+          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-document-picker/android",
           "packageImportPath": "import com.reactnativedocumentpicker.RNDocumentPickerPackage;",
           "packageInstance": "new RNDocumentPickerPackage()",
           "buildTypes": [],
           "libraryName": "rndocumentpicker",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-document-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -29,17 +29,17 @@
       }
     },
     "react-native-gesture-handler": {
-      "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-gesture-handler",
+      "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-gesture-handler",
       "name": "react-native-gesture-handler",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
+          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-gesture-handler/RNGestureHandler.podspec",
           "version": "2.19.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-gesture-handler/android",
+          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-gesture-handler/android",
           "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
           "packageInstance": "new RNGestureHandlerPackage()",
           "buildTypes": [],
@@ -48,7 +48,7 @@
             "RNGestureHandlerButtonComponentDescriptor",
             "RNGestureHandlerRootViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -57,23 +57,23 @@
       }
     },
     "react-native-image-picker": {
-      "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-image-picker",
+      "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-image-picker",
       "name": "react-native-image-picker",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-image-picker/react-native-image-picker.podspec",
+          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-image-picker/react-native-image-picker.podspec",
           "version": "7.1.2",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-image-picker/android",
+          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-image-picker/android",
           "packageImportPath": "import com.imagepicker.ImagePickerPackage;",
           "packageInstance": "new ImagePickerPackage()",
           "buildTypes": [],
           "libraryName": "RNImagePickerSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -82,17 +82,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-safe-area-context",
+      "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
+          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec",
           "version": "4.11.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-safe-area-context/android",
+          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-safe-area-context/android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -101,7 +101,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -110,17 +110,17 @@
       }
     },
     "react-native-screens": {
-      "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-screens",
+      "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-screens",
       "name": "react-native-screens",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-screens/RNScreens.podspec",
+          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-screens/RNScreens.podspec",
           "version": "3.34.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-screens/android",
+          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-screens/android",
           "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
           "packageInstance": "new RNScreensPackage()",
           "buildTypes": [],
@@ -136,7 +136,7 @@
             "RNSScreenComponentDescriptor",
             "RNSModalScreenComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -145,17 +145,17 @@
       }
     },
     "react-native-svg": {
-      "root": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-svg",
+      "root": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-svg",
       "name": "react-native-svg",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-svg/RNSVG.podspec",
+          "podspecPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-svg/RNSVG.podspec",
           "version": "15.6.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-svg/android",
+          "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-svg/android",
           "packageImportPath": "import com.horcrux.svg.SvgPackage;",
           "packageInstance": "new SvgPackage()",
           "buildTypes": [],
@@ -188,7 +188,7 @@
             "RNSVGTSpanComponentDescriptor",
             "RNSVGUseComponentDescriptor"
           ],
-          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -358,7 +358,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp"
+          "default": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp"
         },
         {
           "name": "--platform <string>",
@@ -409,8 +409,7 @@
         },
         {
           "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "vscode"
+          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
         },
         {
           "name": "--binary-path <string>",
@@ -565,8 +564,7 @@
         },
         {
           "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "vscode"
+          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
         },
         {
           "name": "--appId <string>",
@@ -641,7 +639,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/ios",
+      "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/ios",
       "xcodeProject": {
         "name": "Biologic.xcworkspace",
         "path": ".",
@@ -650,7 +648,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/BilogistApp/android",
+      "sourceDir": "/Users/vaishalipanchal/Documents/BiologistApp/RealGitBiologist/BilogistApp/android",
       "appName": "app",
       "packageName": "com.biologic",
       "applicationId": "com.biologic",

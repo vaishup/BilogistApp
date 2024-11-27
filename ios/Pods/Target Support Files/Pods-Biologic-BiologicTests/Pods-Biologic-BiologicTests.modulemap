@@ -1,0 +1,6 @@
+module Pods_Biologic_BiologicTests {
+  umbrella header "Pods-Biologic-BiologicTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

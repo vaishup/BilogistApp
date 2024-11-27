@@ -10,14 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@aws-amplify/react-native": "^1.1.6",
     "@gluestack-style/react": "^1.0.57",
     "@gluestack-ui/config": "^1.1.20",
     "@gluestack-ui/themed": "^1.1.51",
+    "@react-native-async-storage/async-storage": "^2.1.0",
     "@react-navigation/bottom-tabs": "^6.6.1",
     "@react-navigation/core": "github:react-navigation/core",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.11.0",
     "@react-navigation/stack": "^6.4.1",
+    "aws-amplify": "^6.10.0",
     "h": "^1.0.0",
     "lucide-react-native": "^0.441.0",
     "or": "^0.2.0",
