@@ -3,7 +3,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {Image, VStack} from '@gluestack-ui/themed';
 import Slider from '../components/Slider/Slider';
 import Button from '../components/Button';
-import {colors} from '../styles/color';
+import {colors} from '../styles/colors';
 import { Text, View} from '@gluestack-ui/themed';
 import {fonts_styles} from '../styles/font';
 import {useAuth} from '../navigation';

@@ -2,7 +2,7 @@ import React from 'react';
 import {DimensionValue, TouchableOpacity, ViewStyle} from 'react-native';
 import {View, HStack, Spinner, Text} from '@gluestack-ui/themed';
 import Icon from '../components/IconPack';
-import {colors} from '../styles/color';
+import {colors} from '../styles/colors';
 import {fonts_styles} from '../styles/font';
 
 interface CustomButtonProps {

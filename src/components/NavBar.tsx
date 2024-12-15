@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
 import {Dimensions, TouchableOpacity, StyleSheet, Platform} from 'react-native';
 import {HStack, SafeAreaView, Text, View} from '@gluestack-ui/themed';
-import {useModal} from '../components/Modal/GlobalModal';
 import Icon from './IconPack';
-import {colors} from '../styles/color';
+import {colors} from '../styles/colors';
 import {useAuth} from '../navigation';
 import {fonts_styles} from '../styles/font';
 
@@ -13,7 +12,6 @@ const NavBar = ({navigation, state}: any) => {
   const iconGap = 5;
   const iconSize = 25;
   const fontSize = 14;
-  const {setModalState} = useModal();
   const getTextStyle = (routeName: any) => {
     const isCurrentRoute = state.routeNames[state.index] === routeName;
     return isCurrentRoute ? fonts_styles.bold : fonts_styles.light;

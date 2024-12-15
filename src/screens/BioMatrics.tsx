@@ -5,11 +5,11 @@ import { Text, VStack, HStack, ScrollView } from "@gluestack-ui/themed";
 import CustomTextField from "../components/TextField";
 import CustomButton from "../components/Button";
 import Icon from "../components/IconPack";
-import { colors } from "../styles/color";
+import { colors } from "../styles/colors";
 import { fonts_styles } from "../styles/font";
 // import {signIn, signOut, getCurrentUser} from 'aws-amplify/auth';
 import { useAuth } from "../navigation";
-import UploadBox from "../components/Modal/UploadBox";
+// import UploadBox from "../components/Modal/UploadBox";
 const { width: screenW, height: screenH } = Dimensions.get("window");
 const width = screenW / screenH > 0.9 ? screenW * 0.6 : screenW;
 const height = screenH;
@@ -99,7 +99,7 @@ const BioMatrics = ({ navigation }: any) => {
               color={colors.txtColor_bg}
               size="3xl"
             >
-              BioMatrics
+              Biometrics
             </Text>
           </VStack>
 

@@ -3,10 +3,20 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {VStack} from '@gluestack-ui/themed';
 import Slider from '../components/Slider/Slider';
 import Button from '../components/Button';
-import {colors} from '../styles/color';
+import {colors} from '../styles/colors';
+import {signOut} from 'aws-amplify/auth';
 
 const {width: screenW, height: screenH} = Dimensions.get('window');
 const width = screenW / screenH > 0.9 ? screenW * 0.6 : screenW;
+async function handleSignOut() {
+  try {
+    await signOut();
+   // navigation.navigate("Welcome");
+  } catch (error) {
+    console.log('error signing out: ', error);
+  }
+}
+
 
 const Welcome = ({navigation}: any) => {
   return (
@@ -26,7 +36,9 @@ const Welcome = ({navigation}: any) => {
             text="Sign In"
             backgroundColor={colors.btnBgColor_secondary}
             textColor={colors.white}
-            action={() => navigation.navigate('SignIn')}
+            action={() => navigation.navigate('SignIn')
+        
+          }
           />
           {/* <Button text="Sign Up" action={() => navigation.navigate('SignUp')} /> */}
         </VStack>

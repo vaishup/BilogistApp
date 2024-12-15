@@ -10,7 +10,7 @@ import {
 } from '@gluestack-ui/themed';
 import CustomTextField from '../TextField';
 import Icon from '../IconPack';
-import {colors} from '../../styles/color';
+import {colors} from '../../styles/colors';
 import {fonts_styles} from '../../styles/font';
 
 interface ModalContextProps {

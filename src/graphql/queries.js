@@ -1,11 +1,66 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getMainShift = /* GraphQL */ `
+  query GetMainShift($id: ID!) {
+    getMainShift(id: $id) {
+      id
+      locationID
+      shiftName
+      duties
+      shiftDate
+      shiftStartTime
+      shiftEndTime
+      createdBy
+      startDate
+      endDate
+      shiftstatus
+      userId
+      staffIds
+      shifts {
+        nextToken
+        __typename
+      }
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const listMainShifts = /* GraphQL */ `
+  query ListMainShifts(
+    $filter: ModelMainShiftFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listMainShifts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        locationID
+        shiftName
+        duties
+        shiftDate
+        shiftStartTime
+        shiftEndTime
+        createdBy
+        startDate
+        endDate
+        shiftstatus
+        userId
+        staffIds
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;
 export const getTheShifts = /* GraphQL */ `
   query GetTheShifts($id: ID!) {
     getTheShifts(id: $id) {
       id
-      Location
       duties
       staffId
       time
@@ -15,6 +70,31 @@ export const getTheShifts = /* GraphQL */ `
       endDate
       shiftstatus
       userId
+      checkInTIme
+      checkOutTime
+      AdminTime
+      AssignStatus
+      locationID
+      amendment
+      mainShiftID
+      mainShift {
+        id
+        locationID
+        shiftName
+        duties
+        shiftDate
+        shiftStartTime
+        shiftEndTime
+        createdBy
+        startDate
+        endDate
+        shiftstatus
+        userId
+        staffIds
+        createdAt
+        updatedAt
+        __typename
+      }
       createdAt
       updatedAt
       __typename
@@ -30,7 +110,6 @@ export const listTheShifts = /* GraphQL */ `
     listTheShifts(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        Location
         duties
         staffId
         time
@@ -40,6 +119,89 @@ export const listTheShifts = /* GraphQL */ `
         endDate
         shiftstatus
         userId
+        checkInTIme
+        checkOutTime
+        AdminTime
+        AssignStatus
+        locationID
+        amendment
+        mainShiftID
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;
+export const theShiftsByMainShiftIDAndStartDate = /* GraphQL */ `
+  query TheShiftsByMainShiftIDAndStartDate(
+    $mainShiftID: ID!
+    $startDate: ModelStringKeyConditionInput
+    $sortDirection: ModelSortDirection
+    $filter: ModelTheShiftsFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    theShiftsByMainShiftIDAndStartDate(
+      mainShiftID: $mainShiftID
+      startDate: $startDate
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        duties
+        staffId
+        time
+        startTime
+        endTime
+        startDate
+        endDate
+        shiftstatus
+        userId
+        checkInTIme
+        checkOutTime
+        AdminTime
+        AssignStatus
+        locationID
+        amendment
+        mainShiftID
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;
+export const getLocation = /* GraphQL */ `
+  query GetLocation($id: ID!) {
+    getLocation(id: $id) {
+      id
+      name
+      status
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const listLocations = /* GraphQL */ `
+  query ListLocations(
+    $filter: ModelLocationFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listLocations(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        status
         createdAt
         updatedAt
         __typename
@@ -67,6 +229,8 @@ export const getTheStaff = /* GraphQL */ `
       shiftIds
       userId
       employeeId
+      staffStatus
+      shiftstatus
       createdAt
       updatedAt
       owner
@@ -97,6 +261,8 @@ export const listTheStaffs = /* GraphQL */ `
         shiftIds
         userId
         employeeId
+        staffStatus
+        shiftstatus
         createdAt
         updatedAt
         owner

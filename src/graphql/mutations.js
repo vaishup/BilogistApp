@@ -1,6 +1,93 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const createMainShift = /* GraphQL */ `
+  mutation CreateMainShift(
+    $input: CreateMainShiftInput!
+    $condition: ModelMainShiftConditionInput
+  ) {
+    createMainShift(input: $input, condition: $condition) {
+      id
+      locationID
+      shiftName
+      duties
+      shiftDate
+      shiftStartTime
+      shiftEndTime
+      createdBy
+      startDate
+      endDate
+      shiftstatus
+      userId
+      staffIds
+      shifts {
+        nextToken
+        __typename
+      }
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const updateMainShift = /* GraphQL */ `
+  mutation UpdateMainShift(
+    $input: UpdateMainShiftInput!
+    $condition: ModelMainShiftConditionInput
+  ) {
+    updateMainShift(input: $input, condition: $condition) {
+      id
+      locationID
+      shiftName
+      duties
+      shiftDate
+      shiftStartTime
+      shiftEndTime
+      createdBy
+      startDate
+      endDate
+      shiftstatus
+      userId
+      staffIds
+      shifts {
+        nextToken
+        __typename
+      }
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const deleteMainShift = /* GraphQL */ `
+  mutation DeleteMainShift(
+    $input: DeleteMainShiftInput!
+    $condition: ModelMainShiftConditionInput
+  ) {
+    deleteMainShift(input: $input, condition: $condition) {
+      id
+      locationID
+      shiftName
+      duties
+      shiftDate
+      shiftStartTime
+      shiftEndTime
+      createdBy
+      startDate
+      endDate
+      shiftstatus
+      userId
+      staffIds
+      shifts {
+        nextToken
+        __typename
+      }
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
 export const createTheShifts = /* GraphQL */ `
   mutation CreateTheShifts(
     $input: CreateTheShiftsInput!
@@ -8,7 +95,6 @@ export const createTheShifts = /* GraphQL */ `
   ) {
     createTheShifts(input: $input, condition: $condition) {
       id
-      Location
       duties
       staffId
       time
@@ -18,6 +104,31 @@ export const createTheShifts = /* GraphQL */ `
       endDate
       shiftstatus
       userId
+      checkInTIme
+      checkOutTime
+      AdminTime
+      AssignStatus
+      locationID
+      amendment
+      mainShiftID
+      mainShift {
+        id
+        locationID
+        shiftName
+        duties
+        shiftDate
+        shiftStartTime
+        shiftEndTime
+        createdBy
+        startDate
+        endDate
+        shiftstatus
+        userId
+        staffIds
+        createdAt
+        updatedAt
+        __typename
+      }
       createdAt
       updatedAt
       __typename
@@ -31,7 +142,6 @@ export const updateTheShifts = /* GraphQL */ `
   ) {
     updateTheShifts(input: $input, condition: $condition) {
       id
-      Location
       duties
       staffId
       time
@@ -41,6 +151,31 @@ export const updateTheShifts = /* GraphQL */ `
       endDate
       shiftstatus
       userId
+      checkInTIme
+      checkOutTime
+      AdminTime
+      AssignStatus
+      locationID
+      amendment
+      mainShiftID
+      mainShift {
+        id
+        locationID
+        shiftName
+        duties
+        shiftDate
+        shiftStartTime
+        shiftEndTime
+        createdBy
+        startDate
+        endDate
+        shiftstatus
+        userId
+        staffIds
+        createdAt
+        updatedAt
+        __typename
+      }
       createdAt
       updatedAt
       __typename
@@ -54,7 +189,6 @@ export const deleteTheShifts = /* GraphQL */ `
   ) {
     deleteTheShifts(input: $input, condition: $condition) {
       id
-      Location
       duties
       staffId
       time
@@ -64,6 +198,76 @@ export const deleteTheShifts = /* GraphQL */ `
       endDate
       shiftstatus
       userId
+      checkInTIme
+      checkOutTime
+      AdminTime
+      AssignStatus
+      locationID
+      amendment
+      mainShiftID
+      mainShift {
+        id
+        locationID
+        shiftName
+        duties
+        shiftDate
+        shiftStartTime
+        shiftEndTime
+        createdBy
+        startDate
+        endDate
+        shiftstatus
+        userId
+        staffIds
+        createdAt
+        updatedAt
+        __typename
+      }
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const createLocation = /* GraphQL */ `
+  mutation CreateLocation(
+    $input: CreateLocationInput!
+    $condition: ModelLocationConditionInput
+  ) {
+    createLocation(input: $input, condition: $condition) {
+      id
+      name
+      status
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const updateLocation = /* GraphQL */ `
+  mutation UpdateLocation(
+    $input: UpdateLocationInput!
+    $condition: ModelLocationConditionInput
+  ) {
+    updateLocation(input: $input, condition: $condition) {
+      id
+      name
+      status
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const deleteLocation = /* GraphQL */ `
+  mutation DeleteLocation(
+    $input: DeleteLocationInput!
+    $condition: ModelLocationConditionInput
+  ) {
+    deleteLocation(input: $input, condition: $condition) {
+      id
+      name
+      status
       createdAt
       updatedAt
       __typename
@@ -91,6 +295,8 @@ export const createTheStaff = /* GraphQL */ `
       shiftIds
       userId
       employeeId
+      staffStatus
+      shiftstatus
       createdAt
       updatedAt
       owner
@@ -119,6 +325,8 @@ export const updateTheStaff = /* GraphQL */ `
       shiftIds
       userId
       employeeId
+      staffStatus
+      shiftstatus
       createdAt
       updatedAt
       owner
@@ -147,6 +355,8 @@ export const deleteTheStaff = /* GraphQL */ `
       shiftIds
       userId
       employeeId
+      staffStatus
+      shiftstatus
       createdAt
       updatedAt
       owner

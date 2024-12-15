@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from "react";
 import {
   Alert,
   Linking,
   PermissionsAndroid,
   Platform,
   TouchableOpacity,
-} from 'react-native';
+} from "react-native";
 import {
   Actionsheet,
   ActionsheetBackdrop,
@@ -18,12 +18,22 @@ import {
   Spinner,
   Text,
   VStack,
-} from '@gluestack-ui/themed';
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
-import DocumentPicker from 'react-native-document-picker';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import Icon from '../IconPack';
-import {colors} from '../../styles/color';
+} from "@gluestack-ui/themed";
+
+import { launchCamera, launchImageLibrary } from "react-native-image-picker";
+import DocumentPicker from "react-native-document-picker";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import Icon from "../IconPack";
+import { colors } from "../../styles/colors";
+import {
+  check,
+  request,
+  PERMISSIONS,
+  RESULTS,
+  openSettings,
+} from "react-native-permissions";
+
+
 
 const UploadBox = ({
   onReturnUri,
@@ -75,8 +85,18 @@ const UploadBox = ({
         return false;
       }
     } else {
-      // iOS permissions are handled in the Info.plist
-      return true;
+      const permission = await check(PERMISSIONS.IOS.CAMERA);
+      if (permission === RESULTS.GRANTED) {
+        return true;
+      } else if (
+        permission === RESULTS.DENIED ||
+        permission === RESULTS.LIMITED
+      ) {
+        const granted = await request(PERMISSIONS.IOS.CAMERA);
+        return granted === RESULTS.GRANTED;
+      } else {
+        return false;
+      }
     }
   };
 
@@ -97,7 +117,8 @@ const UploadBox = ({
         [
           {
             text: 'Go to Settings',
-            onPress: () => Linking.openSettings(),
+            onPress: () =>
+              openSettings().catch(() => console.warn('cannot open settings')),
           },
           {
             text: 'Cancel',
@@ -159,8 +180,8 @@ const UploadBox = ({
           />
         ) : (
           <HStack p={20} space="sm" justifyContent="center" alignItems="center">
-            <Icon type="fileText" color={colors.txtColor_bg} />
-            <Text color={colors.txtColor_bg} size="sm" fontWeight="$medium">
+            <Icon type="fileText" color={colors.onboardingTxt} />
+            <Text color={colors.onboardingTxt} size="sm" fontWeight="$medium">
               {fileName || `${placeholder}.pdf`}
             </Text>
           </HStack>
@@ -219,5 +240,7 @@ const UploadBox = ({
     </TouchableOpacity>
   );
 };
+
+export default UploadBox;
 
 export default UploadBox;

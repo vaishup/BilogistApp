@@ -8,7 +8,7 @@ import {
 import { HStack, SafeAreaView, Text, View } from "@gluestack-ui/themed";
 
 import Icon from "./IconPack";
-import { colors } from "../styles/color";
+import { colors } from "../styles/colors";
 
 const { width, height } = Dimensions.get("window");
 
@@ -46,7 +46,7 @@ const TabBar = ({ navigation, state }: any) => {
         <TouchableOpacity
           style={{ flex: 1, alignItems: "center" }}
           onPress={() => {
-            // navigation.navigate("Listing");
+       navigation.navigate("Settings");
           }}
         >
           <Icon type={"Settings"} color={getIconColor("Notification")} />

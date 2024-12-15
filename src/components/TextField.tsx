@@ -18,7 +18,7 @@ import {
   View,
 } from '@gluestack-ui/themed';
 import Icon from './IconPack';
-import {colors} from '../styles/color';
+import {colors} from '../styles/colors';
 import {fonts_styles} from '../styles/font';
 
 export interface ISelectItem {
@@ -139,7 +139,7 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
         width={width || '100%'}
         alignItems="center"
         isReadOnly={isReadOnly || false}
-        backgroundColor={backgroundColor || colors.btnBgColor_primary}
+        backgroundColor={backgroundColor || colors.gray2}
         borderRadius={borderRadius || h * 0.2}
         borderColor={
           error ? colors.txtColor_danger : borderColor || 'transparent'
@@ -162,7 +162,7 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
                 <Icon
                   type={icon}
                   size={iconSize || 20}
-                  color={colors.txtColor_primary}
+                  color={colors.txtColor_bg}
                 />
               </InputSlot>
             )}
@@ -184,12 +184,12 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
                 keyboardType={keyboardType ?? 'default'}
                 maxLength={maxLength ?? defaultMaxLength}
                 type={type && type}
+                autoCorrect={false}
                 height={isMultiline ? 60 : 20}
                 multiline={isMultiline}
                 textAlign={textAlign || 'left'}
                 textAlignVertical={isMultiline ? 'top' : 'center'}
-                autoCapitalize={autoCapitalize || undefined}
-                color={colors.txtColor_bg}
+                autoCapitalize={autoCapitalize || 'words'}                color={colors.txtColor_bg}
                 style={fonts_styles.regular}
               />
             ) : (
@@ -246,7 +246,7 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
                   <Icon
                     type={isSelect ? 'ChevronDown' : iconRight}
                     size={iconRightSize || 26}
-                    color={colors.txtColor_primary}
+                    color={colors.txtColor_bg}
                   />
                 </TouchableOpacity>
               </InputSlot>
