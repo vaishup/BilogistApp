@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from 'react';
 import {
   Alert,
   Linking,
   PermissionsAndroid,
   Platform,
   TouchableOpacity,
-} from "react-native";
+} from 'react-native';
 import {
   Actionsheet,
   ActionsheetBackdrop,
@@ -18,22 +18,20 @@ import {
   Spinner,
   Text,
   VStack,
-} from "@gluestack-ui/themed";
+} from '@gluestack-ui/themed';
+import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
+import DocumentPicker from 'react-native-document-picker';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
-import { launchCamera, launchImageLibrary } from "react-native-image-picker";
-import DocumentPicker from "react-native-document-picker";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Icon from "../IconPack";
-import { colors } from "../../styles/colors";
+import { colors } from '../../styles/colors';
+import Icon from '../IconPack';
 import {
   check,
   request,
   PERMISSIONS,
   RESULTS,
   openSettings,
-} from "react-native-permissions";
-
-
+} from 'react-native-permissions';
 
 const UploadBox = ({
   onReturnUri,
@@ -66,39 +64,7 @@ const UploadBox = ({
     }
   }, [uri]);
 
-  const requestCameraPermission = async () => {
-    if (Platform.OS === 'android') {
-      try {
-        const granted = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.CAMERA,
-          {
-            title: 'Camera Permission',
-            message: 'We need access to your camera to take photos.',
-            buttonNeutral: 'Ask Me Later',
-            buttonNegative: 'Cancel',
-            buttonPositive: 'OK',
-          },
-        );
-        return granted === PermissionsAndroid.RESULTS.GRANTED;
-      } catch (err) {
-        console.warn(err);
-        return false;
-      }
-    } else {
-      const permission = await check(PERMISSIONS.IOS.CAMERA);
-      if (permission === RESULTS.GRANTED) {
-        return true;
-      } else if (
-        permission === RESULTS.DENIED ||
-        permission === RESULTS.LIMITED
-      ) {
-        const granted = await request(PERMISSIONS.IOS.CAMERA);
-        return granted === RESULTS.GRANTED;
-      } else {
-        return false;
-      }
-    }
-  };
+
 
   const handleChoosePhoto = async () => {
     setIsOpenPicker(false);
@@ -108,32 +74,8 @@ const UploadBox = ({
     }
   };
 
-  const handleTakePhoto = async () => {
-    const hasPermission = await requestCameraPermission();
-    if (!hasPermission) {
-      Alert.alert(
-        'Permission Denied',
-        'RxRoute does not have access to your camera.',
-        [
-          {
-            text: 'Go to Settings',
-            onPress: () =>
-              openSettings().catch(() => console.warn('cannot open settings')),
-          },
-          {
-            text: 'Cancel',
-            style: 'cancel',
-          },
-        ],
-      );
-      return;
-    }
-    setIsOpenPicker(false);
-    const result = await launchCamera({mediaType: 'photo'});
-    if (result.assets && result.assets.length > 0) {
-      setFileUri(result.assets[0].uri || '');
-    }
-  };
+
+  
 
   const handleChooseDocument = async () => {
     setIsOpenPicker(false);
@@ -201,12 +143,7 @@ const UploadBox = ({
         <ActionsheetBackdrop />
         <ActionsheetContent h="$72" pb={pb} bgColor="none">
           <VStack width="100%" borderRadius={16} bgColor="white">
-            <ActionsheetItem
-              alignItems="center"
-              justifyContent="center"
-              onPress={handleTakePhoto}>
-              <ActionsheetItemText size="lg">Take Photo</ActionsheetItemText>
-            </ActionsheetItem>
+           
             <Divider h={1} />
             <ActionsheetItem
               alignItems="center"
@@ -240,7 +177,5 @@ const UploadBox = ({
     </TouchableOpacity>
   );
 };
-
-export default UploadBox;
 
 export default UploadBox;

@@ -27,6 +27,7 @@ export const colors = {
   secondary:'#1B1B1B',
   profileHeaderBg:'#66ccff',
   gray:'#d9d9d9',
-  gray2:'#cccccc'
+  gray2:'#cccccc',
+  onboardingTxt:"#cccccc"
   // Add more colors as needed
 };

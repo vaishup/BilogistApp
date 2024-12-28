@@ -40,10 +40,9 @@ const {width, height} = Dimensions.get('window');
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigation = useNavigation();
-  // const [usernameInput, setUserName] = useState('tes17');
-  // const [passwordInput, setPassword] = useState('5VFlLjq17C');
-  const [usernameInput, setUserName] = useState('tes7e');
-  const [passwordInput, setPassword] = useState('WNw8RKImGF');
+  const [usernameInput, setUserName] = useState('');
+  const [passwordInput, setPassword] = useState('');
+
   const [isError, setIsError] = useState(false);
   const [errMsg, setErrMsg] = useState('');
   const {setIsUserAuth} = useAuth();
@@ -163,8 +162,8 @@ const Login = () => {
           />
           <Formik
             initialValues={{
-              email: 'tes17',
-              password: '5VFlLjq17C',
+              email: '',
+              password: '',
             }}
             validationSchema={schema}
             onSubmit={values => {
