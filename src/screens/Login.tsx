@@ -86,9 +86,7 @@ const Login = () => {
             query: getTheStaff, // Replace with your actual query
             variables: { id: userId },
           });
-  
           const staff = staffData.data.getTheStaff;
-  
           // Check the profile status
           if (staff.profileStatus === 'Incomplete') {
             // Redirect to Complete Profile screen

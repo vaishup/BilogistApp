@@ -66,13 +66,7 @@ const Profile = () => {
         setIsLoading(true);
         setErrMsg('');
         const userId = await getTableID();
-        console.log('userDetail', userId);
         var newFileS3Path_front = null;
-        console.log('newFileS3Path_front', newFileS3Path_front);
-
-        console.log('fileUri_front.curr', fileUri_front.curr);
-        console.log('fileUri_front.curr', fileUri);
-
         if (fileUri_front.curr && fileUri_front.curr !== fileUri_front.prev) {
           newFileS3Path_front =
             (await uploadToS3(fileUri_front.curr, 'userprofile', 'selfie')) ||
